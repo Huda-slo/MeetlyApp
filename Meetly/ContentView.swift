@@ -251,7 +251,6 @@ struct AddSessionView: View {
     }
 }
 
-// MARK: - Notifications View
 // MARK: - Settings View
 struct SettingsView: View {
     @Binding var showLogin: Bool
