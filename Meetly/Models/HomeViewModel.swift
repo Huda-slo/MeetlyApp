@@ -19,8 +19,7 @@ class HomeViewModel: ObservableObject {
             Session(title: "Marketing plan", time: "1:00–1:30 PM", imageName: "session")
         ]
         self.services = [
-            Service(title: "Schedule meetly", subtitle: "30 Minutes", colorName: "Blue"),
-            Service(title: "Quick meetly", subtitle: "10 Minutes", colorName: "Gray"),
+            Service(title: " individual meetly", subtitle: "30 Minutes", colorName: "Blue"),
             Service(title: "Create event", subtitle: "Open", colorName: "Gray")
         ]
     }

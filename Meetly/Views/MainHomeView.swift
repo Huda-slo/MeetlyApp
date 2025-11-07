@@ -67,6 +67,26 @@ struct MainHomeView: View {
                         }
                         
                         // Other Services
+                        VStack(alignment: .leading, spacing: 20) {
+                            Text("Other Services")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .foregroundColor(.blue)
+                                .padding(.horizontal)
+                            
+                            HStack(spacing: 16) {
+                                ForEach(viewModel.services) { service in
+                                    Button(action: {
+                                        if service.title == "Create event" {
+                                            showAddSession = true
+                                        }
+                                    }) {
+                                        ServiceButtonView(service: service)
+                                    }
+                                }
+                            }
+                            .padding(.horizontal)
+                        }
                         
                         Spacer(minLength: 40)
                     }
